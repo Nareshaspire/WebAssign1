@@ -19,17 +19,17 @@
         public static double DivisionTask(double num1, double num2)
         {
             
-            double sum;
+            double answer;
 
             if (num2 == 0)
             {
-                sum = -1;
+                answer = -1;
             }
             else
             {
-                sum = num1 / num2;
+                answer = num1 / num2;
             }
-            return sum;
+            return answer;
         }
     }
 }
