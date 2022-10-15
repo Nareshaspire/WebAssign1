@@ -13,14 +13,11 @@ namespace WebApiCalculator.Controllers
     public class CalculatorSubtractionController : ControllerBase
     {
         [HttpGet]
-        public double SubtractTwoNumbers([FromQuery] double number1, [FromQuery] double number2)
-        //this method of WebApi accept two numbers
-        //in double data type
-        //and use class library task subtracton already
-        //made to return the result of subtraction
+        public double SubtractTwoNumbers([FromQuery] double num1, [FromQuery] double num2)
+       
         {
 
-            return CalculatorTasks.SubtractionTask(number1, number2);
+            return CalculatorApi.SubtractionTask(num1,num2 );
         }
     }
 }

@@ -13,14 +13,14 @@ namespace WebApiCalculator.Controllers
     public class CalculatorMultiplicationController : ControllerBase
     {
         [HttpGet]
-        public double MultiplyTwoNumbers([FromQuery] double number1, [FromQuery] double number2)
+        public double MultiplyTwoNumbers([FromQuery] double num1, [FromQuery] double num2)
         //this method of WebApi accept two numbers
         //in double data type
         //and use class library task multiplication already
         //made to return the result of product of two numbers
         {
 
-            return CalculatorTasks.MultiplicationTask(number1, number2);
+            return CalculatorApi.MultiplicationTask(num1, num2);
         }
     }
 }

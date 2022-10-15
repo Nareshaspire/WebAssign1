@@ -13,14 +13,14 @@ namespace WebApiCalculator.Controllers
     public class CalculatorDivisionController : ControllerBase
     {
         [HttpGet]
-        public double DivideTwoNumbers([FromQuery] double number1, [FromQuery] double number2)
+        public double DivideTwoNumbers([FromQuery] double num1, [FromQuery] double num2)
         //this method of WebApi accept two numbers
         //in double data type
         //and use class library task division already
         //made to return the result of their quotient
         {
 
-            return CalculatorTasks.DivisionTask(number1, number2);
+            return CalculatorApi.DivisionTask(num1,num2 );
         }
     }
 }
