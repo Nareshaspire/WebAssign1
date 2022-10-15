@@ -20,9 +20,7 @@ namespace WebApiCalculator.Controllers
             //made to return their sum
         {
 
-            return CalculatorApi.AdditionTask(num1,num2 
-                
-                );
+            return CalculatorApi.AdditionTask(num1,num2);
         }
 
        
