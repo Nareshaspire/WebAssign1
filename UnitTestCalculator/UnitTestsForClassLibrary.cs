@@ -9,7 +9,7 @@ namespace UnitTestCalculator
 
         [TestMethod]
         public void CheckClassLibrarySolveAdditionChallengeTestMethod1()
-        {//this addition test for addition result with 0 as first number
+        {//this addition test method test the addition result with 0 as first number
             double additionresult;
             additionresult = CalculatorApi.AdditionTask(0,10);
             Assert.AreEqual(10, additionresult);
@@ -337,14 +337,14 @@ namespace UnitTestCalculator
         }
         [TestMethod]
         public void CheckClassLibrarySolveDivisionChallengeTestMethod9()
-        {//this division test for quotient  with both 0 numbers
+        {//this division test method test the quotient  with both 0 numbers
             double divisionresult;
             divisionresult = CalculatorApi.DivisionTask(0, 0);
             Assert.AreEqual(-1, divisionresult);
         }
         [TestMethod]
         public void CheckClassLibrarySolveDivisionChallengeTestMethod10()
-        {//this division test for quotient  with one large value and other negative number
+        {//this division test method test the quotient  with one large value and other negative number
             double divisionresult;
             divisionresult = CalculatorApi.DivisionTask(100000, -1);
             Assert.AreEqual(-100000, divisionresult);
